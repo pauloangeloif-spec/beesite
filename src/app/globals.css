@@ -1,26 +1,29 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #fffcf7;
+  --foreground: #07182b;
+  --beecasa-gold: #f6a400;
+  --beecasa-gold-hover: #ffb61b;
+  --beecasa-dark: #06192c;
+  --beecasa-dark-hover: #0b2844;
+  --beecasa-cream: #fffcf7;
+  --beecasa-cream-soft: #fff3df;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  min-height: 100vh;
+}
+
+/* Formato hexagonal bioinspirado característico da BeeCasa */
+.hex-badge {
+  clip-path: polygon(25% 7%, 75% 7%, 100% 50%, 75% 93%, 25% 93%, 0% 50%);
+}
+
+/* Suavização de scroll */
+html {
+  scroll-behavior: smooth;
 }
